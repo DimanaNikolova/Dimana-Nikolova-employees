@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script type="text/javascript" src="main.js"></script>
+        <link rel="stylesheet" href="style.css" />
+        <title>Employees</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Welcome!</h1>
+            <p>
+                Choose a csv file to find out which pair of employees have
+                worked together the longest!
+            </p>
+
+            <label for="file-upload" class="custom-file-upload">
+                Upload CSV
+            </label>
+            <input
+                id="file-upload"
+                type="file"
+                onchange="openCsv(event)"
+                accept=".csv"
+            />
+            <p id="output"></p>
+        </div>
+    </body>
+</html>
